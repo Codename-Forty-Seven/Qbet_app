@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">QBet app</string>
+    <string name="splash_screen_txt">Quick Brain</string>
+    <string name="splash_screen_txt_2">Exercise Trainer</string>
+    <string name="memory_training_txt">Memory training</string>
+    <string name="logical_challenge_txt">Logical challenges</string>
+    <string name="maths_tests_txt">Maths tests</string>
+    <string name="save_txt">Save</string>
+    <string name="confirm_license_btn">Continue</string>
+    <string name="confirm_license_txt">I agree to the processing of personal data as provided for in the privacy policy</string>
+    <string name="privacy_policy_header_txt">Privacy Policy</string>
+    <string name="agree_license_txt">Thank you! You can now use the application!</string>
+    <string name="explain_policy_txt">Unfortunately, you cannot use the application without confirming the privacy policy</string>
+    <string name="error_license_txt">Error With connection!</string>
+    <string name="write_answer_txt">Write down your answer</string>
+    <string name="end_question">Congratulations, you\'ve passed all the questions!</string>
+
+
+    //LogicalActivity
+    <!--    <string name="first_question_logical">Какое слово должно быть следующим? Дом, Ключ, Замок, __?</string>-->
+    <string name="first_question_logical">Which word should be next? House, Key, Lock, __?</string>
+
+    <!--    <string name="second_question_logical">Каждая буква заменена другой. Расшифруйте слово: "БМНЛО" если знаете, что "А" заменена "Б".</string>-->
+    <string name="second_question_logical">Each letter is replaced by another letter. Decode the word: \"BMNLO\" if you know that \"A\" is replaced by \"B\".</string>
+
+    <!--    <string name="third_question_logical">Если "Книга" означает "Стол", "Стол" означает "Окно", и "Окно" означает "Дверь", через что человек проходит, чтобы войти в комнату?</string>-->
+    <string name="third_question_logical">If \"Book\" means \"Table,\" \"Table\" means \"Window,\" and \"Window\" means \"Door,\" what does a person go through to enter a room?</string>
+
+    <!--    <string name="forth_question_logical">Что соответствует "дереву" так же, как "океан" соответствует "воде"?</string>-->
+    <string name="forth_question_logical">What corresponds to \"tree\" in the same way that \"ocean\" corresponds to \"water\"?</string>
+
+    <!--    <string name="fifth_question_logical">Если перевернуть контейнер с открытым верхом на запад, куда упадет содержимое?</string>-->
+    <string name="fifth_question_logical">If you turn a container with the open top westward, where will the contents fall?</string>
+    <string name="hint_for_fifth_question_logical">Will fall on the … side</string>
+
+    <!--    <string name="sixth_question_logical">Что идет следующим в этой последовательности? Вода, Лед, Пар, __?</string>-->
+    <string name="sixth_question_logical">What comes next in this sequence? Water, Ice, Steam, __?</string>
+
+    <!--    <string name="seventh_question_logical">В слове из пяти букв, вторая буква "о", четвертая "л". Это что-то, что можно съесть. Что это за слово?</string>-->
+    <string name="seventh_question_logical">It\'s a five-letter word, second letter "o", fourth letter "l". It\'s something you can eat. What\'s that word?</string>
+
+    <!--    <string name="eight_question_logical">Изображение, где книга лежит на ухе. Что это за популярное выражение?</string>-->
+    <string name="eight_question_logical">An image of a book resting on your ear. What is this popular expression?</string>
+
+    <!--    <string name="ninth_question_logical">Определите следующее число в последовательности: 2, 4, 8, 16, __?</string>-->
+    <string name="ninth_question_logical">Identify the next number in the sequence: 2, 4, 8, 16, __?</string>
+
+    <!--    <string name="tenth_question_logical">Если часы показывают 3:15, какой угол образуют часовая и минутная стрелки?</string>-->
+    <string name="tenth_question_logical">If the clock reads 3:15, what angle do the hour and minute hands form?</string>
+    <string name="hint_tenth_question_logical">… degree</string>
+
+    <!--    <string name="end_question_logical">Поздравляем, вы прошли все вопросы!</string>-->
+    <string name="hint_end_question_logical">That\`s all!</string>
+
+    <!--    <string name="wrong_answer_logical">Извините, но ваш ответ не верен!</string>-->
+    <string name="wrong_answer_logical">Sorry, but your answer is not correct!</string>
+
+    <!--    <string name="correct_answer_logical">Ваш ответ правилен!</string>-->
+    <string name="correct_answer_logical">Your answer is correct!</string>
+
+    //MathsActivity
+
+    //MemoryActivity
+    <string name="main_memory_txt">Wealth Authenticity Relaxation Spontaneity Variability Justice Exoticism Gratitude Amplitude</string>
+    <string name="first_question_maths">23 + 58 = __?</string>
+    <string name="second_question_maths">2 + 2 * 2 = __?</string>
+    <string name="third_question_maths">9 * 25 = __?</string>
+    <string name="forth_question_maths">254 + 960 / 4 = __?</string>
+    <string name="fifth_question_maths">2 * 2 + 95 + 84 * 9 = __?</string>
+    <string name="repeat_answer_maths">Try again</string>
+
+</resources>

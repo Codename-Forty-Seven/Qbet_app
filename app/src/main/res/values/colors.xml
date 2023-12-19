@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_main">#31714e</color>
+    <color name="bg_for_text">#4a7c4f</color>
+    <color name="bg_for_edge">#f8d059</color>
+    <color name="bg_for_edge_pb">#fffb9e</color>
+    <color name="bg_for_question_pb">#fffb9e</color>
+    <color name="bg_for_complete_pb">#fffb9e</color>
+    <color name="bg_for_un_complete_pb">#a4982f</color>
+    <color name="bg_for_un_complete_btn">#a29843</color>
+</resources>

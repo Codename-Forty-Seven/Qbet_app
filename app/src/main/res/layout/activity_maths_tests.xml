@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context=".gameActivities.MathsTestsActivity">
+
+    <ImageView
+        android:id="@+id/img_logo_main"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/design_for_item"
+        android:padding="7dp"
+        android:paddingHorizontal="12dp"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="@+id/img_logo_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/txt_v_count_maths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/img_btn_back_maths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/anim_click_for_back"
+        android:clickable="true"
+        android:focusable="true"
+        android:state_pressed="true"
+        app:layout_constraintBottom_toBottomOf="@+id/img_logo_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_logo_main" />
+
+    <LinearLayout
+        android:id="@+id/ll_with_count_question_math"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/ll_with_anim_and_repeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_main">
+
+        <TextView
+            android:id="@+id/txt_v_question_maths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="TextView"
+            android:textColor="@color/bg_for_question_pb"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_v_animation_maths"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo_main" />
+
+        <EditText
+            android:id="@+id/ed_txt_answer_maths"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/bg_for_answers"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:hint="@string/write_answer_txt"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/bg_for_text"
+            android:textColorHint="@color/bg_main"
+            app:layout_constraintBottom_toTopOf="@+id/txt_v_save_maths"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_with_anim_and_repeat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/txt_v_save_maths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_with_count_question_math">
+
+        <TextView
+            android:id="@+id/txt_v_animation_maths"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/bg_for_question_pb"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_v_save_maths"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_with_count_question_math" />
+
+        <TextView
+            android:id="@+id/txt_v_repeat_task_maths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="@string/repeat_answer_maths"
+            android:textColor="@color/bg_for_question_pb"
+            android:textSize="50sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/txt_v_save_maths"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_with_count_question_math" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_v_save_maths"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_for_group"
+        android:gravity="center"
+        android:text="@string/save_txt"
+        android:textAllCaps="true"
+        android:textColor="@color/bg_for_text"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

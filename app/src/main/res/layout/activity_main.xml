@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_logo_main"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_1" />
+
+    <LinearLayout
+        android:id="@+id/ll_with_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/design_for_item"
+        android:padding="7dp"
+        android:paddingHorizontal="12dp"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="@+id/img_logo_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/txt_v_count_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_memory_training"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/anim_click_for_group"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:state_pressed="true"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_main">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/memory_training_txt"
+            android:textColor="@color/bg_main"
+            android:textSize="25sp" />
+
+        <quick.brain.exercise.trainer.utils.CircularProgressBar
+            android:id="@+id/memory_progress_bar"
+            android:layout_width="5dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="7dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logical_challenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/anim_click_for_group"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:state_pressed="true"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@+id/ll_memory_training"
+        app:layout_constraintStart_toStartOf="@+id/ll_memory_training"
+        app:layout_constraintTop_toBottomOf="@+id/ll_memory_training">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/logical_challenge_txt"
+            android:textColor="@color/bg_main"
+            android:textSize="25sp" />
+
+        <quick.brain.exercise.trainer.utils.CircularProgressBar
+            android:id="@+id/logical_progress_bar"
+            android:layout_width="5dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_maths_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/anim_click_for_group"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:state_pressed="true"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@+id/ll_logical_challenge"
+        app:layout_constraintStart_toStartOf="@+id/ll_logical_challenge"
+        app:layout_constraintTop_toBottomOf="@+id/ll_logical_challenge">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/maths_tests_txt"
+            android:textColor="@color/bg_main"
+            android:textSize="25sp" />
+
+        <quick.brain.exercise.trainer.utils.CircularProgressBar
+            android:id="@+id/maths_progress_bar"
+            android:layout_width="5dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
